@@ -4,6 +4,7 @@ import SplashScreen from "./components/splashscreen";
 import { AnimatePresence, motion as m } from "framer-motion";
 import useOnboarding from "./hooks/useOnboarding";
 import { OnboardingConfig } from "./config/onboarding.config";
+import Menu from "./components/menu/menu";
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -53,7 +54,9 @@ function App() {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
             exit={{ opacity: 0 }}
-          ></m.div>
+          >
+            <Menu />
+          </m.div>
         ) : null}
       </AnimatePresence>
     </div>

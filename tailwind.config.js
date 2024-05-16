@@ -13,6 +13,7 @@ module.exports = {
       colors: {
         primary: "#ff961b",
         primary2: "#E88302",
+        gray: "#575555",
       },
       keyframes: {
         "accordion-down": {
